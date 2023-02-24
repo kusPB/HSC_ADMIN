@@ -1,0 +1,40 @@
+.form_signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form_signin .checkbox {
+  font-weight: 400;
+}
+
+.form_signin .form_floating:focus-within {
+    z-index: 2;
+  }
+
+.form_signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form_signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btn_hoval {
+  background-color: #e30613;
+}
+
+.btn_hoval_blue {
+  background-color: #356bab;
+  border-color: #356bab;
+}
+
+.form-control:focus {
+  border-color: #e30613;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
