@@ -4,3 +4,7 @@
 /frontend/request.rest
 /frontend/package-lock.json
 /backend/package-lock.json
+/backend/clientbuild
+/frontend/build
+/backend/key.pem
+/backend/cert.pem

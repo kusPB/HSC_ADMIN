@@ -3,8 +3,8 @@ import axios from 'axios';
 import jwt_decode from "jwt-decode";
 
 const axiosJWT = axios.create();
-const backend_url = 'http://localhost:5000';
-const frontend_url = 'http://localhost:3000';
+const backend_url = 'https://localhost:5000';
+const frontend_url = 'https://localhost:5000';
 
 export const Auth = async (email, password) => {
     try {
@@ -14,7 +14,7 @@ export const Auth = async (email, password) => {
         });
         return result;
     } catch (error) {
-        window.location.href = 'http://localhost:3000';
+        window.location.href = frontend_url;
         if (error.response) {
             console.log(error.response.data.msg);
             return error.response.data.msg;
@@ -32,7 +32,7 @@ export const Signup = async (name, email, password, confPassword) => {
         });
         return "success";
     } catch (error) {
-        window.location.href = 'http://localhost:3000';
+        window.location.href = frontend_url;
         if (error.response) {
             return error.response.data.msg;
         }
@@ -53,7 +53,7 @@ export const refreshToken = async () => {
         return data;
 
     } catch (error) {
-        window.location.href = 'http://localhost:3000';
+        window.location.href = frontend_url;
         if (error.response) {
             return 'failed';
         }

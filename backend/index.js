@@ -4,6 +4,15 @@ import cookieParser from "cookie-parser";
 import cors from "cors";
 import db from "./config/Database.js";
 import router from "./routes/index.js";
+import bodyParser from "body-parser";
+import path from 'path';
+import { fileURLToPath } from 'url';
+import http from 'http'
+import https from 'https';
+import fs from 'fs';
+
+
+
 dotenv.config();
 const app = express();
 
@@ -19,10 +28,10 @@ try {
 }
 
 var corsOptions = {
-    origin: "http://localhost:5000"
+    origin: "https://localhost:5000"
 };
 
-app.use(cors({ credentials:true, origin:'http://localhost:3000' }));
+app.use(cors({ credentials:true, origin:'https://localhost:3000' }));
 
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
@@ -38,6 +47,7 @@ app.use(router);
 
 
 app.use(express.static('storage'));
+app.use(express.static('clientbuild'));
 app.use('/storage', express.static('storage'));
 
 app.get('*', (req, res) => {
