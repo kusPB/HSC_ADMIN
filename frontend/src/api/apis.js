@@ -3,8 +3,11 @@ import axios from 'axios';
 import jwt_decode from "jwt-decode";
 
 const axiosJWT = axios.create();
-const backend_url = 'https://localhost:5000';
-const frontend_url = 'https://localhost:5000';
+const backend_url = 'https://hscadmin.westeurope.cloudapp.azure.com:5000';
+const frontend_url = 'https://hscadmin.westeurope.cloudapp.azure.com:5000';
+
+// const backend_url = 'http://localhost:5000';
+// const frontend_url = 'http://localhost:5000';
 
 export const Auth = async (email, password) => {
     try {

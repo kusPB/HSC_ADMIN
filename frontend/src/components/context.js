@@ -6,7 +6,9 @@ const AppProvider = ({ children }) => {
     const [g_token, setGToken] = useState('0');
     const [g_expire, setGExpire] = useState(false);
     
-    const g_base_url = 'http://localhost:5000';
+    // const g_base_url = 'http://localhost:5000';
+    const g_base_url = 'https://hscadmin.westeurope.cloudapp.azure.com:5000';
+
     
     return (
         <AppContext.Provider

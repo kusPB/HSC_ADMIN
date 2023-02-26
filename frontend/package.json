@@ -41,6 +41,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://localhost:5000",
-  "homepage": "https://localhost:5000/"
+  "proxy": "https://hscadmin.westeurope.cloudapp.azure.com:5000",
+  "homepage": "https://hscadmin.westeurope.cloudapp.azure.com:5000"
 }
